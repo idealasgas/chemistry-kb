@@ -1,0 +1,22 @@
+ui_menu_find_colouring_by_color
+<- ui_user_command_class_atom; ui_user_command_class_view_kb;
+=> nrel_main_idtf:
+	[Какие красители такого цвета?]
+	(* <- lang_ru;;*);
+	[Which colourings are of this colour?]
+	(* <- lang_en;;*);;
+
+ui_menu_find_colouring_by_color
+=> ui_nrel_command_template:
+	[*
+		action_find_colouring_by_color _-> ._action_find_colouring_by_color_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_find_colouring_by_color_instance _<- question;;
+	*];;
+
+ui_menu_find_colouring_by_color
+=> ui_nrel_command_lang_template:
+	[Поиск красителей цвета $ui_arg_1] (* <- lang_ru;;*);
+	[Search colourings of $ui_arg_1 color] (* <- lang_en;;*);;

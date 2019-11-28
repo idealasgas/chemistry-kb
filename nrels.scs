@@ -1,4 +1,4 @@
-nrel_color_of_the_flame_during_combustion 
+nrel_color_of_the_flame_during_combustion
 	=> nrel_main_idtf: [цвет пламени во время горения] (*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
 
@@ -21,7 +21,13 @@ nrel_periodic_number
 	=> nrel_first_domain: chemical_element;
 	=> nrel_second_domain: number;;
 
-nrel_solvation 
+nrel_color
+	=> nrel_main_idtf: [цвет*](* <- lang_ru;; *);
+	<- sc_node_norole_relation;
+	=> nrel_first_domain: color;
+	=> nrel_second_domain: chemical_element;;
+
+nrel_solvation
 <- sc_node_norole_relation;
 => nrel_main_idtf:
     [solvation*]
@@ -43,20 +49,20 @@ nrel_crystallization
 	[crystallization*]
 	(* <- lang_en;; *);;
 
-nrel_irradiation 
-	=> nrel_main_idtf: 
+nrel_irradiation
+	=> nrel_main_idtf:
 		[облучение*](*<- lang_ru;;*);;
-nrel_electrolysis 
-	=> nrel_main_idtf: 
+nrel_electrolysis
+	=> nrel_main_idtf:
 		[электролиз*](*<- lang_ru;;*);;
-nrel_radioactive_decay 
-	=> nrel_main_idtf: 
+nrel_radioactive_decay
+	=> nrel_main_idtf:
 	[радиоактивный распад*](*<- lang_ru;;*);;
-nrel_air_separation 
-	=> nrel_main_idtf: 
+nrel_air_separation
+	=> nrel_main_idtf:
 		[разделение воздуха*](*<- lang_ru;;*);;
-nrel_sublimation 
-	=> nrel_main_idtf: 
+nrel_sublimation
+	=> nrel_main_idtf:
 		[сублимация*](*<- lang_ru;;*);;
 
 nrel_electronegativity
@@ -83,11 +89,11 @@ nrel_optical_activity
 
 nrel_charge
 	=> nrel_main_idtf: [заряд*](*<-lang_ru;;*);
-	<- sc_node_norole_relation;;	
+	<- sc_node_norole_relation;;
 
 nrel_heating
 	=> nrel_main_idtf: [нагревание*](*<-lang_ru;;*);
-	<- sc_node_norole_relation;;	
+	<- sc_node_norole_relation;;
 
 nrel_sedimentation
 	=> nrel_main_idtf: [осаждение*](*<-lang_ru;;*);
@@ -97,11 +103,11 @@ nrel_sedimentation
 nrel_receiving
 	=> nrel_main_idtf: [получение*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
-	
+
 nrel_applying
 	=> nrel_main_idtf: [применение*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;
-	
+
 nrel_decomposition
 	=> nrel_main_idtf: [распад*](*<-lang_ru;;*);
 	<- sc_node_norole_relation;;

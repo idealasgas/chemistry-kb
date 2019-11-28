@@ -1,0 +1,36 @@
+lib_component_agent_find_colouring_by_color
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска красителя по цвету]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent search colouring by color]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component:
+	lib_component_ui_menu_find_colouring_by_color;
+
+-> rrel_key_sc_element:
+	.platform_independent_realization_of_sc_agent_find_colouring_by_color;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/domains.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+sc_node_not_relation -> action_find_colouring_by_color;;
+
+action_find_colouring_by_color => nrel_main_idtf:
+	[действие. Поиска красителя по цвету]
+	(* <- lang_ru;;	*);
+	[action. Search colouring by color]
+	(* <- lang_en;;	*);;

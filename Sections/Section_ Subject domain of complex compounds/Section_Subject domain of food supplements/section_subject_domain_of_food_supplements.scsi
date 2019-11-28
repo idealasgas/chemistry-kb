@@ -1442,6 +1442,7 @@ fast_green
 => nrel_main_idtf:[быстрый зеленый](* <- lang_ru;; *);
 => nrel_main_idtf:[fast green](* <- lang_en;; *);
 => nrel_label:[e134](* <- lang_en;; *);
+<= nrel_color: color_green;
 
 
 <- rrel_key_sc_element:...
@@ -2246,14 +2247,3 @@ iron_oxides
 			-> rrel_example:[<b><sc_element sys_idtf="iron_oxides">Iron oxides</sc_element></b> are used as a dye for coloring food in yellow, orange, red, brown and black colors.](* <- lang_en;; => nrel_format: format_html;;*);;
 		*);;
 *);;
-
-
-
-
-
-
-
-
-
-
-
